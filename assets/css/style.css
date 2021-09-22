@@ -13534,7 +13534,7 @@ header.stickycls {
   .top-header .header-dropdown .mobile-wishlist {
     position: fixed;
     bottom: 20px;
-    right: 32%;
+    right: 38%;
     font-size: 0;
     padding: 0;
     z-index: 9;
@@ -13627,7 +13627,7 @@ header.stickycls {
   }
 
   .main-menu .menu-right .icon-nav .mobile-cart {
-    right: 48%;
+    right: 55%;
   }
 
   .main-menu .menu-right .icon-nav .mobile-cart .close-circle i {
@@ -13685,7 +13685,7 @@ header.stickycls {
 
 @media (max-width: 480px) {
   .brand-logo img {
-    height: 25px;
+    width: 80px !important;
   }
 }
 
@@ -38500,6 +38500,12 @@ body.rtl .account-setting {
 .btn-primary {
   color: #fff;
   background-color: #F08A10 !important;
+  border-color: #F08A10;
+}
+.btn-primary:hover {
+  background-color: transparent !important;
+  color: #F08A10 !important;
+  border-color: #F08A10;
 }
 
 .text-primary {
@@ -38793,4 +38799,38 @@ body.rtl .account-setting {
   to {
       -webkit-transform: rotate(359deg);
   }
+}
+.address_area .form-check .form-check-input{
+  margin-right: 10px;
+}
+
+.slick-active .slider-contain h1, .slick-active .slider-contain h2, .slick-active .slider-contain h3, .slick-active .slider-contain a, .slick-active .slider-contain p, .slick-active .slider-contain span {
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.slick-active .slider-contain h2 {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.slick-active .slider-contain h3, .slick-active .slider-contain span {
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+.slick-active .slider-contain p {
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+.slick-active .slider-contain a {
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
 }

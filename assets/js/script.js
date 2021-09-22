@@ -74,6 +74,7 @@
         return false;
     });
 
+    new WOW().init();
 
     /*=====================
      03. Age verify modal
@@ -351,6 +352,9 @@
      14. slick slider
      ==========================*/
     $('.slide-1').slick({
+        autoplay:true,
+        autoplaySpeed: 3000,
+
     });
 
     $('.slide-center').slick({
@@ -559,21 +563,28 @@
         infinite: true,
         speed: 300,
         slidesToShow: 4,
-        slidesToScroll: 4,
-        autoplay: false,
+        slidesToScroll: 1,
+        autoplay: true,
         autoplaySpeed: 3000,
         responsive: [{
             breakpoint: 1200,
             settings: {
                 slidesToShow: 3,
-                slidesToScroll: 3
+                slidesToScroll: 1
             }
         },
         {
             breakpoint: 991,
             settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 500,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
             }
         }
         ]
@@ -988,6 +999,8 @@
         speed: 300,
         slidesToShow: 4,
         slidesToScroll: 1,
+        autoplay:true,
+        autoplaySpeed: 4000,
         responsive: [{
             breakpoint: 1367,
             settings: {
@@ -1815,12 +1828,13 @@ var body_event = $("body");
 body_event.on("click", ".dark-btn", function () {
     $(this).toggleClass('dark');
     $('body').removeClass('dark');
+
     if ($('.dark-btn').hasClass('dark')) {
-        $('.dark-btn').text('Light');
+        $('.dark-btn').text('Dark');
         $('body').addClass('dark');
     } else {
         $('#theme-dark').remove();
-        $('.dark-btn').text('Dark');
+        $('.dark-btn').text('Light');
     }
 
     return false;
@@ -1992,3 +2006,13 @@ $('.add-extent .animated-btn').on('click', function (e) {
         });
         
     })
+    
+    function RedirectaddAddress(){
+        $("#prevAddress").addClass("d-none"); 
+        $("#addAddress").removeClass("d-none");  
+        $("#prevAddressbtn").prop("checked",false);
+    }
+    function RedirectprevAddress(){
+        $("#addAddress").addClass("d-none");  
+        $("#addAddressbtn").prop("checked",false);
+    }
