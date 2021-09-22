@@ -1828,13 +1828,12 @@ var body_event = $("body");
 body_event.on("click", ".dark-btn", function () {
     $(this).toggleClass('dark');
     $('body').removeClass('dark');
-
     if ($('.dark-btn').hasClass('dark')) {
-        $('.dark-btn').text('Dark');
+        $('.dark-btn').text('Light');
         $('body').addClass('dark');
     } else {
         $('#theme-dark').remove();
-        $('.dark-btn').text('Light');
+        $('.dark-btn').text('Dark');
     }
 
     return false;
@@ -1986,7 +1985,7 @@ $('.add-extent .animated-btn').on('click', function (e) {
             duration: 7000,
             easing: 'swing',
             step: function() {
-                $this.text(Math.floor(this.countNum));
+                $this.text("+"+Math.floor(this.countNum));
             },
             complete: function() {
                 $this.text(this.countNum);

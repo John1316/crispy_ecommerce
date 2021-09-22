@@ -44,7 +44,16 @@
 <body class="theme-color-1">
     <!-- start loader -->
     <div id="loader">
-        <img src="assets/images/Logo/Loader.png" alt="">
+        <div class="row loader_item">
+            <div class="col-12 text-center">
+                <img src="assets/images/Logo/Loader.png" class="loader_img" alt="">
+            </div>
+            <div class="spinners row justify-content-center">
+                <img src="assets/images/Logo/Loader_small.png" class="bounce bounce1" alt="">
+                <img src="assets/images/Logo/Loader_small.png" class="bounce bounce2" alt="">
+                <img src="assets/images/Logo/Loader_small.png" class="bounce bounce3" alt="">
+            </div>
+        </div>
     </div>
     <!-- end loader --> 
     <!-- header start -->
@@ -684,7 +693,7 @@
                 <div class="col-sm-6">
                     <nav aria-label="breadcrumb" class="theme-breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index-2.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">profile</li>
                         </ol>
                     </nav>
@@ -701,7 +710,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <h3>status for order no: 54151548</h3>
-                    <div class="row border-part">
+                    <div class="row border-part align-items-center">
                         <div class="col-lg-6">
                             <div class="row">
                                 
@@ -723,7 +732,7 @@
                                             </li> -->
                                             <li>
                                                 <div class="left">
-                                                    <span>customer number</span>
+                                                    <span>Customer number</span>
                                                 </div>
                                                 <div class="right">
                                                     <span>54151548</span>
@@ -731,7 +740,7 @@
                                             </li>
                                             <li>
                                                 <div class="left">
-                                                    <span>order date</span>
+                                                    <span>Order date</span>
                                                 </div>
                                                 <div class="right">
                                                     <span>20 Nov 2021</span>
@@ -739,7 +748,7 @@
                                             </li>
                                             <li>
                                                 <div class="left">
-                                                    <span>Ship Date</span>
+                                                    <span>Delivery Date</span>
                                                 </div>
                                                 <div class="right">
                                                     <span>20 Nov 2021</span>
@@ -747,7 +756,7 @@
                                             </li>
                                             <li>
                                                 <div class="left">
-                                                    <span>shipping address</span>
+                                                    <span>Delivery address</span>
                                                 </div>
                                                 <div class="right">
                                                     <span>11 ISRAA st. </span>
@@ -756,7 +765,7 @@
                                             
                                             <li>
                                                 <div class="left">
-                                                    <span>carrier tracking number</span>
+                                                    <span>Order tracking number</span>
                                                 </div>
                                                 <div class="right">
                                                     <span>656974541515484</span>
@@ -769,60 +778,38 @@
                         </div>
                         <div class="col-lg-6">
 
-                            <div class="order-map">
-                                <iframe
-                                    width="100%"
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55107.59629446948!2d-97.77629221286301!3d30.316123884942762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644ca7d7a2a6d0d%3A0x209a4c2782a39461!2sCentral%20Market!5e0!3m2!1sen!2sin!4v1607754725548!5m2!1sen!2sin"
-                                    frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            
+                            <div class="wrapper">
+                                <div class="arrow-steps clearfix">
+                                    <div class="step done"> <span> Order placed</span> </div>
+                                    <div class="step current"> <span>preparing to Deliver</span> </div>
+                                    <div class="step"><span> On the way</span> </div>
+                                    <div class="step"><span>Delivered</span> </div>
+                                </div>
+                            </div>
+                            <div class="order-table table-responsive-sm">
+                                <table class="table mb-0 table-striped table-borderless">
+                                    <thead class="">
+                                        <tr>
+                                            <th scope="col">Date</th>
+                                            <th scope="col">Time</th>
+                                            <th scope="col">Description</th>
+                                            <th scope="col">Location</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>20 Nov 2021</td>
+                                            <td>12.00 AM</td>
+                                            <td>shipped</td>
+                                            <td>Mohandsen</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                         
-                    </div>
-                    <div class="wrapper">
-                        <div class="arrow-steps clearfix">
-                            <div class="step done"> <span> order placed</span> </div>
-                            <div class="step current"> <span>preparing to ship</span> </div>
-                            <div class="step"><span> shipped</span> </div>
-                            <div class="step"><span>delivered</span> </div>
-                        </div>
-                    </div>
-                    <div class="order-table table-responsive-sm">
-                        <table class="table mb-0 table-striped table-borderless">
-                            <thead class="">
-                                <tr>
-                                    <th scope="col">Date</th>
-                                    <th scope="col">Time</th>
-                                    <th scope="col">Description</th>
-                                    <th scope="col">Location</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>20 Nov 2021</td>
-                                    <td>12.00 AM</td>
-                                    <td>shipped</td>
-                                    <td>Mohandsen</td>
-                                </tr>
-                                <tr>
-                                    <td>20 Nov 2021</td>
-                                    <td>12.00 AM</td>
-                                    <td>shipping info received</td>
-                                    <td>Mohandsen</td>
-                                </tr>
-                                <tr>
-                                    <td>20 Nov 2021</td>
-                                    <td>12.00 AM</td>
-                                    <td>origin scan</td>
-                                    <td>Mohandsen</td>
-                                </tr>
-                                <tr>
-                                    <td>20 Nov 2021</td>
-                                    <td>12.00 AM</td>
-                                    <td>shipping info received</td>
-                                    <td>Mohandsen</td>
-                                </tr>
-                            </tbody>
-                        </table>
                     </div>
                 </div>
             </div>
@@ -1531,7 +1518,7 @@
     <!-- tap to top -->
     <div class="tap-top top-cls">
         <div>
-            <i class="fa fa-angle-double-up"></i>
+            <img src="assets/images/Logo/Move_up.png" class="w-100" alt="">
         </div>
     </div>
     <!-- tap to top end -->

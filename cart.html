@@ -41,11 +41,20 @@
 </head>
 
 <body class="theme-color-1">
-        <!-- start loader -->
-        <div id="loader">
-            <img src="assets/images/Logo/Loader.png" alt="">
+    <!-- start loader -->
+    <div id="loader">
+        <div class="row loader_item">
+            <div class="col-12 text-center">
+                <img src="assets/images/Logo/Loader.png" class="loader_img" alt="">
+            </div>
+            <div class="spinners row justify-content-center">
+                <img src="assets/images/Logo/Loader_small.png" class="bounce bounce1" alt="">
+                <img src="assets/images/Logo/Loader_small.png" class="bounce bounce2" alt="">
+                <img src="assets/images/Logo/Loader_small.png" class="bounce bounce3" alt="">
+            </div>
         </div>
-        <!-- end loader --> 
+    </div>
+    <!-- end loader --> 
 
     <!-- header start -->
     <header id="sticky-header">
@@ -684,7 +693,7 @@
                 <div class="col-sm-6">
                     <nav aria-label="breadcrumb" class="theme-breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index-2.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                             <li class="breadcrumb-item active">cart</li>
                         </ol>
                     </nav>
@@ -930,8 +939,8 @@
                 </div>
             </div>
             <div class="row cart-buttons">
-                <div class="col-6"><a href="menu.html" class="btn btn-solid">continue shopping</a></div>
-                <div class="col-6"><a href="#" class="btn btn-solid">Update</a></div>
+                <div class="col-6 text-left"><a href="menu.html" class="btn btn-solid">Choose More Items</a></div>
+                <!-- <div class="col-6"><a href="#" class="btn btn-solid">Update</a></div> -->
             </div>
             <div class="coupon_area mt-5">
                 <div class="row">
@@ -962,10 +971,9 @@
                                     <p class="cart_amount">183 EGP</p>
                                 </div>
                                 <div class="cart_subtotal ">
-                                    <p>Shipping</p>
+                                    <p>Delivery</p>
                                     <p class="cart_amount">183 EGP</p>
                                 </div>
-                                <a  class="text-primary text-right">Calculate shipping</a>
                                 <hr>
                                 <div class="cart_subtotal">
                                     <p>Total</p>
@@ -1072,7 +1080,7 @@
                 </a>
             </li> -->
             <li>
-                <div class="dark-btn">Light</div>
+                <div class="dark-btn">Dark</div>
             </li>
             <!-- <li>
                 <div class="rtl-btn">RTL</div>
@@ -1684,7 +1692,7 @@
     <!-- tap to top -->
     <div class="tap-top top-cls">
         <div>
-            <i class="fa fa-angle-double-up"></i>
+            <img src="assets/images/Logo/Move_up.png" class="w-100" alt="">
         </div>
     </div>
     <!-- tap to top end -->
