@@ -694,7 +694,7 @@
                     <nav aria-label="breadcrumb" class="theme-breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">product</li>
+                            <li class="breadcrumb-item active" aria-current="page">Fried Chicken Pizza</li>
                         </ol>
                     </nav>
                 </div>
@@ -811,27 +811,9 @@
                             aria-labelledby="top-home-tab">
                             <div class="product-tab-discription">
                                 <div class="part">
-                                    <p>The Model is wearing a white blouse from our stylist's collection, see the image
-                                        for a mock-up of what the actual blouse would look like.it has text written on
-                                        it in a black cursive language which looks great on a white color.</p>
+                                    <p>When it comes to chicken there just isn't anything more delicious than a juicy, crusty piece of finger-licking good fried chicken from Eat's Crispy.</p>
                                 </div>
-                                <div class="part">
-                                    <h5 class="inner-title">fabric:</h5>
-                                    <p>Art silk is manufactured by synthetic fibres like rayon. It's light in weight and
-                                        is soft on the skin for comfort in summers.Art silk is manufactured by synthetic
-                                        fibres like rayon. It's light in weight and is soft on the skin for comfort in
-                                        summers.</p>
-                                </div>
-                                <div class="part">
-                                    <h5 class="inner-title">size & fit:</h5>
-                                    <p>The model (height 5'8") is wearing a size S</p>
-                                </div>
-                                <div class="part">
-                                    <h5 class="inner-title">Material & Care:</h5>
-                                    <p>Top fabric: pure cotton</p>
-                                    <p>Bottom fabric: pure cotton</p>
-                                    <p>Hand-wash</p>
-                                </div>
+                                
                             </div>
                         </div>
                         
@@ -848,6 +830,45 @@
                                             </div>
                                         </div>
                                     </div>
+                                    
+
+                                                <div class="col-12">
+                                                    <form method="post" action="" id="review_form">
+                                
+                                                        <div class="form-group col-md-8 col-12" id="rating-ability-wrapper">
+                                                            <label class="control-label" for="rating">
+                                                                <span class="field-label-info"></span>
+                                                                <input type="hidden" id="selected_rating" name="selected_rating" value="" required="required">
+                                                            </label>
+                                                            <h2 class="bold rating-header" style="">
+                                                                <span class="selected-rating">0</span><small> / 5</small>
+                                                            </h2>
+                                                            <button type="button" class="btnrating btn btn-default btn-lg" data-attr="1" id="rating-star-1">
+                                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                            </button>
+                                                            <button type="button" class="btnrating btn btn-default btn-lg" data-attr="2" id="rating-star-2">
+                                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                            </button>
+                                                            <button type="button" class="btnrating btn btn-default btn-lg" data-attr="3" id="rating-star-3">
+                                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                            </button>
+                                                            <button type="button" class="btnrating btn btn-default btn-lg" data-attr="4" id="rating-star-4">
+                                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                            </button>
+                                                            <button type="button" class="btnrating btn btn-default btn-lg" data-attr="5" id="rating-star-5">
+                                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                            </button>
+                                
+                                
+                                                        </div>
+                                
+                                
+                                
+                                                    </form>
+                                                </div>
+                                                
+
+                                    
                                     <div class="col-md-6">
                                         <label for="name">Name</label>
                                         <input type="text" class="form-control" id="name" placeholder="Enter Your name"
@@ -1180,7 +1201,7 @@
                 <div class="row">
                     <div class="col-xl-6 col-md-6 col-sm-12">
                         <div class="footer-end">
-                            <p>All rights reserved by <a class="text-primary" href="https://digitalbondmena.com/">Digital Bond</a> © 2021</p>
+                            <p>All rights reserved by <a class="text-primary" href="https://digitalbondmena.com/"><img class="digitalbond_logo" src="assets/images/Logo/SQ_Logo.png" alt=""></a> © 2021</p>
                         </div>
                     </div>
                 </div>
@@ -2008,6 +2029,23 @@
     <script src="assets/js/script.js"></script>
 
     <script>
+                $(document).ready(function($){
+                    $(".btnrating").on('click',(function(e) {
+                        var previous_value = $("#selected_rating").val();
+                        var selected_value = $(this).attr("data-attr");
+                        $("#selected_rating").val(selected_value);
+                        $(".selected-rating").empty();
+                        $(".selected-rating").html(selected_value);
+                        for (i = 1; i <= selected_value; ++i) {
+                            $("#rating-star-"+i).toggleClass('btn-primary');
+                            $("#rating-star-"+i).toggleClass('btn-default');
+                        }
+                        for (ix = 1; ix <= previous_value; ++ix) {
+                            $("#rating-star-"+ix).toggleClass('btn-primary');
+                            $("#rating-star-"+ix).toggleClass('btn-default');
+                        }
+                    }));
+                });
         function openSearch() {
             document.getElementById("search-overlay").style.display = "block";
         }

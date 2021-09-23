@@ -38505,7 +38505,7 @@ body.rtl .account-setting {
   height: 250px;
 }
 
-.btn-primary {
+.btn-primary , .btn-primary:focus{
   color: #fff;
   background-color: #F08A10 !important;
   border-color: #F08A10;
@@ -38881,3 +38881,9 @@ body.rtl .account-setting {
   position: relative;
 
 } */
+.sub-footer p{
+  padding:10px 0;
+}
+.sub-footer .digitalbond_logo{
+  width: 60px;
+}
