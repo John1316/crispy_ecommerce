@@ -38960,4 +38960,12 @@ body.rtl .account-setting {
   padding: 10px 15px;
   border-radius: 0;
 }
+.product-filter-content .input_search input{
+  border: 0;
+    padding: 20px;
+    border-right: 1px solid #dddddd;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
 }
