@@ -24190,7 +24190,12 @@ body.dark {
 .dark .main-menu .menu-right .icon-nav .onhover-div .show-div.setting ul li a {
   color: #cfd4da;
 }
-
+.dark .show-div.shopping-cart{
+  background-color: #2b2b2b;
+}
+.dark .show-div.shopping-cart .mini-cart-footer{
+  background-color: #2b2b2b;
+}
 .dark .show-div.shopping-cart li .media .media-body h4 {
   color: #e7eaec;
 }
@@ -39003,5 +39008,5 @@ body.rtl .account-setting {
     cursor: pointer;
 }
 .profile_page{
-  padding: 70px 0;
+  padding: 70px 0 ;
 }
