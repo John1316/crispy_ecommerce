@@ -366,7 +366,9 @@ body {
 body.christmas {
   font-family: Philosopher, sans-serif;
 }
-
+body.hidden{
+  overflow-y: hidden !important;
+}
 body.christmas .dark-light {
   display: none;
 }
@@ -9946,7 +9948,38 @@ header.header-style .onhover-dropdown:before {
   box-shadow: 0 0 8px #dddddd;
   overflow-y: auto;
 }
+@media screen and (max-width:1024px){
+  .show-div.shopping-cart{
+    width: 400px;
+    text-align: left;
+    top: 0;
+    right: -400px;
+  }
+  .show-div.shopping-cart.show {
 
+    right: 0 !important;
+  }
+  .show-div.shopping-cart.hide {
+  
+    right: -400px;
+  }
+}
+@media screen and (max-width:420px){
+  .show-div.shopping-cart{
+    width: 100%;
+    text-align: left;
+    top: 0;
+    right: -100%;
+  }
+  .show-div.shopping-cart.show {
+
+    right: 0 !important;
+  }
+  .show-div.shopping-cart.hide {
+  
+    right: -100%;
+  }
+}
 .show-div.shopping-cart.show {
 
   right: 0 !important;

@@ -60,14 +60,18 @@
         $('.show-div.shopping-cart').addClass('show');
         $('.show-div.shopping-cart').addClass('show');
         $(".full_screen_page").addClass("active");
-        $('.col-grid-box').addClass('col-lg-2');
+        $("body").addClass("hidden");
+
         // $(".full_screen_page").addClass("active");
 
     })
+
     $('#cart').on('click', function(){
         $('.show-div.shopping-cart').addClass('show');
         $(".full_screen_page").addClass("active");
-        $('.col-grid-box').addClass('col-lg-2')
+        $('.grid_columns').removeClass('col-lg-12')
+        $('.grid_columns').addClass('col-xl-11 col-lg-7')
+        $("body").addClass("hidden");
 
     })
 
@@ -75,11 +79,16 @@
         $(".show-div.shopping-cart").removeClass("show");
         $(".full_screen_page").removeClass("active");
         $("body").removeClass("hidden");
+        $('.grid_columns').removeClass('col-xl-11 col-lg-7')
+        $('.grid_columns').addClass('col-lg-12')
+
     })
     $(".full_screen_page").on('click', function(){
         $(".show-div.shopping-cart").removeClass("show");
         $(".full_screen_page").removeClass("active");
         $("body").removeClass("hidden");
+        $('.grid_columns').removeClass('col-lg-11')
+        $('.grid_columns').addClass('col-lg-12')
     });
 
     /*=====================  
