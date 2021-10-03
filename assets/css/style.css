@@ -39002,3 +39002,6 @@ body.rtl .account-setting {
     -moz-appearance: none;
     cursor: pointer;
 }
+.profile_page{
+  padding: 70px 0;
+}

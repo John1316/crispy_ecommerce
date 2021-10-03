@@ -786,7 +786,7 @@
 
 
     <!-- personal deatail section start -->
-    <section class="contact-page register-page">
+    <section class="contact-page register-page profile_page">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
@@ -865,7 +865,7 @@
                                                     <h5 class="card-title text-danger">Total:</h5>
                                                     <p class="card-text text-danger">403.845 EGP</p>
                                                 </div>
-                                                <button class="btn btn-primary">Re Order</button>
+                                                <button data-bs-toggle="modal" data-bs-target="#order_details" class="btn btn-primary">Re Order / Order details</button>
                                             </div>
                                         </div>
                                     </div>
@@ -905,7 +905,7 @@
                                                     <h5 class="card-title text-danger">Total:</h5>
                                                     <p class="card-text text-danger">450 EGP</p>
                                                 </div>
-                                                <button class="btn btn-primary">Re Order</button>
+                                                <button data-bs-toggle="modal" data-bs-target="#order_details" class="btn btn-primary">Re Order/ Order details</button>
         
                                             </div>
                                         </div>
@@ -986,7 +986,101 @@
     <!-- Section ends -->
 
 
-
+    <div class="modal fade bd-example-modal-lg" id="order_details" tabindex="-1" role="dialog"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content quick-view-modal">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="product-order">
+                                <div class="row product-order-detail">
+                                    <div class="col-3"><img src="assets/images/Menu/Appetizers/1.jpg" alt="" class="img-fluid blur-up lazyloaded"></div>
+                                    <div class="col-3 order_detail">
+                                        <div>
+                                            <h4>product name</h4>
+                                            <h5>COLESLAW
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 order_detail">
+                                        <div>
+                                            <h4>quantity</h4>
+                                            <h5>2</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 order_detail">
+                                        <div>
+                                            <h4>price</h4>
+                                            <h5>32 EGP</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row product-order-detail">
+                                    <div class="col-3"><img src="assets/images/Menu/Fried_Chicken/1.jpg" alt="" class="img-fluid blur-up lazyloaded"></div>
+                                    <div class="col-3 order_detail">
+                                        <div>
+                                            <h4>product name</h4>
+                                            <h5>Fried Chicken Pizza
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 order_detail">
+                                        <div>
+                                            <h4>quantity</h4>
+                                            <h5>1</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 order_detail">
+                                        <div>
+                                            <h4>price</h4>
+                                            <h5>59 EGP</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row product-order-detail">
+                                    <div class="col-3"><img src="assets/images/Menu/Sandwiches/1.jpg" alt="" class="img-fluid blur-up lazyloaded"></div>
+                                    <div class="col-3 order_detail">
+                                        <div>
+                                            <h4>product name</h4>
+                                            <h5>Zinger King sandwich
+        
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 order_detail">
+                                        <div>
+                                            <h4>quantity</h4>
+                                            <h5>1</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 order_detail">
+                                        <div>
+                                            <h4>price</h4>
+                                            <h5>92 EGP</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="total-sec">
+                                    <ul>
+                                        <li>subtotal <span>183 EGP</span></li>
+                                        <li>Delivery <span>FREE</span></li>
+                                        <li>Tax <span>20 EGP</span></li>
+                                    </ul>
+                                </div>
+                                <div class="final-total">
+                                    <h3>Total <span>203 EGP</span></h3>
+                                </div>
+                                <button class="btn btn-primary my-3">Re order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- footer -->
