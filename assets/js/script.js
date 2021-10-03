@@ -56,6 +56,31 @@
         $(this).remove();
     });
 
+    $('.addToCartIcon').on('click', function(){
+        $('.show-div.shopping-cart').addClass('show');
+        $('.show-div.shopping-cart').addClass('show');
+        $(".full_screen_page").addClass("active");
+        $('.col-grid-box').addClass('col-lg-2');
+        // $(".full_screen_page").addClass("active");
+
+    })
+    $('#cart').on('click', function(){
+        $('.show-div.shopping-cart').addClass('show');
+        $(".full_screen_page").addClass("active");
+        $('.col-grid-box').addClass('col-lg-2')
+
+    })
+
+    $('#closeCart').on('click', function(){
+        $(".show-div.shopping-cart").removeClass("show");
+        $(".full_screen_page").removeClass("active");
+        $("body").removeClass("hidden");
+    })
+    $(".full_screen_page").on('click', function(){
+        $(".show-div.shopping-cart").removeClass("show");
+        $(".full_screen_page").removeClass("active");
+        $("body").removeClass("hidden");
+    });
 
     /*=====================  
      02.Tap on Top
@@ -2015,3 +2040,21 @@ $('.add-extent .animated-btn').on('click', function (e) {
         $("#addAddress").addClass("d-none");  
         $("#addAddressbtn").prop("checked",false);
     }
+    function RedirectDelivery(){
+        $(".pickup_section").addClass("d-none"); 
+        $(".delivery_section").removeClass("d-none");  
+        $(".pickup").prop("checked",false);
+    }
+    function RedirectUp(){
+        $(".delivery_section").addClass("d-none"); 
+        $(".pickup_section").removeClass("d-none");  
+        $(".delivery").prop("checked",false);
+    }
+    function RedirectprevAddress(){
+        $(".pickup_section").addClass("d-none");  
+        $(".pickup").prop("checked",false);
+    }
+    $(document).ready(function(){
+        $(".pickup_section").addClass("d-none");
+        $(".delivery_section").addClass("d-none"); 
+    });

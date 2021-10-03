@@ -614,10 +614,17 @@
                                             </div>
                                         </li> 
                                         -->
-                                        <li class="onhover-div mobile-cart">
+                                        <li class="onhover-div mobile-cart " id="cart">
                                             <div><img src="assets/images/icon/cart.png" class="img-fluid blur-up lazyload" alt=""> <i class="ti-shopping-cart"></i></div>
                                             <span class="cart_qty_cls">3</span>
-                                            <ul class="show-div shopping-cart">
+                                            <!-- <ul class="show-div shopping-cart">
+                                                <li>
+                                                    <button id="cartClose" class="btn">
+                                                        <div class="close-circle text-left"><i class="fa fa-2x text-danger fa-times"
+                                                            aria-hidden="true"></i>
+                                                        </div>                                                    
+                                                    </button>
+                                                </li>
                                                 <li>
                                                     <div class="media">
                                                         <a href="#"><img alt="" class="me-3"
@@ -670,7 +677,7 @@
                                                     <div class="buttons"><a href="cart.html" class="view-cart">view
                                                             cart</a> <a href="checkout.html" class="checkout">checkout</a></div>
                                                 </li>
-                                            </ul>
+                                            </ul> -->
                                         </li>
                                     </ul>
                                 </div>
@@ -682,6 +689,77 @@
         </div>
     </header>
     <!-- header end -->
+    <!-- start mini cart -->
+    <div class="mini-cart">
+        <ul class="show-div shopping-cart">
+
+            <div class="d-flex justify-content-between align-items-center ">
+                <p class="mb-0">There is 3 products</p>
+                <a id="closeCart" class="text-danger"><i class="fa fa-2x fa-times" aria-hidden="true"></i></a>
+            </div>
+            <hr class="my-3">
+            <div class="mini-cart-items">
+
+                <li>
+                    <div class="media">
+                        <a href="#"><img alt="" class="me-3"
+                                src="assets/images/Menu/Appetizers/1.jpg"></a>
+                        <div class="media-body">
+                            <a href="#">
+                                <h4>COLESLAW</h4>
+                            </a>
+                            <h4><span>2 x 16 EGP</span></h4>
+                        </div>
+                    </div>
+                    <div class="close-circle"><a href="#"><i class="fa fa-times"
+                                aria-hidden="true"></i></a></div>
+                </li>
+                <li>
+                    <div class="media">
+                        <a href="#"><img alt="" class="me-3"
+                                src="assets/images/Menu/Fried_Chicken/1.jpg"></a>
+                        <div class="media-body">
+                            <a href="#">
+                                <h4>Fried Chicken Pizza</h4>
+                            </a>
+                            <h4><span>1 x 59 EGP</span></h4>
+                        </div>
+                    </div>
+                    <div class="close-circle"><a href="#"><i class="fa fa-times"
+                                aria-hidden="true"></i></a></div>
+                </li>
+                <li>
+                    <div class="media">
+                        <a href="#"><img alt="" class="me-3"
+                                src="assets/images/Menu/Sandwiches/1.jpg"></a>
+                        <div class="media-body">
+                            <a href="#">
+                                <h4>Zinger King sandwich
+                                </h4>
+                            </a>
+                            <h4><span>1 x 92 EGP</span></h4>
+                        </div>
+                    </div>
+                    <div class="close-circle"><a href="#"><i class="fa fa-times"
+                                aria-hidden="true"></i></a></div>
+                </li>
+            </div>
+            <div class="mini-cart-footer">
+
+                <li>
+                    <div class="total">
+                        <h5>subtotal : <span>183 EGP</span></h5>
+                    </div>
+                </li>
+                <li>
+                    <div class="buttons"><a href="cart.html" class="view-cart">view
+                            cart</a> <a href="checkout.html" class="checkout">checkout</a></div>
+                </li>
+            </div>
+        </ul>
+    </div>
+    <!-- end mini cart -->
+    <div class="full_screen_page"></div>
 
 
     <!-- breadcrumb start -->
@@ -729,281 +807,179 @@
                                 <h6 class="font-weight-bold mb-0">011111111111</h6>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Previous Orders</a>
+                                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+                                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Password</a>
+                                <a class="nav-link" href="index.html" id="v-pills-settings-tab">Logout</a>
+                              </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-9">
                     <div class="trackorder__card">
-                        <div class="product_info_button">    
-                            <ul class="nav" role="tablist" id="nav-tab">
-                                
-                                <li>
-                                    <a data-toggle="tab" href="#past" role="tab" aria-controls="past" aria-selected="false">Previous orders</a>
-                                </li>
-                                
-                            </ul>
-                        </div>
-                        <div class="row no-gutters my-3">
-                            <div class="col-12">
-                                <div class="card card-header-profile shadow-5 bg-primary">
-                                    <div class="card-body">
-                                        <div class="d-flex no-gutters justify-content-between ">
-                                            <p class="mb-0">Date: Jan 03 2021</p>
-                                            <p class="mb-0">Time: 14:13:07</p>
-                                            <p class="mb-0">ID:  #10</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="card shadow-5">
-                                    <div class="card-body">
-                                        <div class="d-flex no-gutters justify-content-between">
-                                            <h5 class="card-title">Subtotal: </h5>
-                                            <p class="card-text">405 EGP</p>
-                                        </div>
-                                        <div class="d-flex no-gutters justify-content-between">
-                                            <h5 class="card-title">Delivery Fees: </h5>
-                                            <p class="card-text">405 EGP</p>
-                                        </div>
-                                        <div class="d-flex no-gutters justify-content-between">
-                                            <h5 class="card-title">VAT:</h5>
-                                            <p class="card-text">14%</p>
-                                        </div>
-                                        <div class="d-flex no-gutters justify-content-between">
-                                            <h5 class="card-title text-success">DISCOUNT ON OFFER:</h5>
-                                            <p class="card-text text-success">-15 %</p>
-                                        </div>
-                                        <div class="d-flex no-gutters justify-content-between">
-                                            <h5 class="card-title text-danger">Total:</h5>
-                                            <p class="card-text text-danger">403.845 EGP</p>
-                                        </div>
-                                        <button class="btn btn-primary">Re Order</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row no-gutters my-3">
-                            <div class="col-12">
-                                <div class="card card-header-profile shadow-5 bg-primary">
-                                    <div class="card-body">
-                                        <div class="d-flex no-gutters justify-content-between ">
-                                            <p class="mb-0">Date: Jan 04 2022</p>
-                                            <p class="mb-0">Time: 14:13:07</p>
-                                            <p class="mb-0">ID:  #5</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="card shadow-5">
-                                    <div class="card-body">
-                                        <div class="d-flex no-gutters justify-content-between">
-                                            <h5 class="card-title">Subtotal: </h5>
-                                            <p class="card-text">405 EGP</p>
-                                        </div>
-                                        <div class="d-flex no-gutters justify-content-between">
-                                            <h5 class="card-title">Delivery Fees: </h5>
-                                            <p class="card-text">405 EGP</p>
-                                        </div>
-                                        <div class="d-flex no-gutters justify-content-between">
-                                            <h5 class="card-title">VAT:</h5>
-                                            <p class="card-text">14%</p>
-                                        </div>
-                                        <div class="d-flex no-gutters justify-content-between">
-                                            <h5 class="card-title text-success">DISCOUNT ON OFFER:</h5>
-                                            <p class="card-text text-success">-15 %</p>
-                                        </div>
-                                        <div class="d-flex no-gutters justify-content-between">
-                                            <h5 class="card-title text-danger">Total:</h5>
-                                            <p class="card-text text-danger">450 EGP</p>
-                                        </div>
-                                        <button class="btn btn-primary">Re Order</button>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="row">
-                            <div class="product_d_inner">   
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                                 <div class="product_info_button">    
                                     <ul class="nav" role="tablist" id="nav-tab">
-                                        <li >
-                                            <a class="active" data-toggle="tab" href="#info" role="tab" aria-controls="info" aria-selected="false">Current order</a>
-                                        </li>
+                                        
                                         <li>
-                                            <a data-toggle="tab" href="#past" role="tab" aria-controls="past" aria-selected="false">Past order</a>
+                                            <a data-toggle="tab" href="#past" role="tab" aria-controls="past" aria-selected="false">Previous orders</a>
                                         </li>
                                         
                                     </ul>
                                 </div>
-                                <div class="tab-content">
-                                    <div class="tab-pane fade show active" id="info" role="tabpanel" >
-                                        <div class="alert alert-dark p-2 text-center" role="alert">
-                                            <div class="row no-gutters">
-                                                <div class="col-4">
-                                                    <p class="my-1">Date</p>
-                                                    <p class="my-1">12 jan</p>
-                                                </div>
-                                                <div class="col-4">
-                                                    <p class="my-1">Time</p>
-                                                    <p class="my-1">4:20:0</p>
-                                                </div>
-                                                <div class="col-4">
-                                                    <p class="my-1">Order</p>
-                                                    <p class="my-1">#10</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row no-gutters my-4">
-                                            <div class="col-lg-6 col-12 my-3">
-                                                <div class="row no-gutters last-stage">
-                                                    <div class="col-2">
-                                                        <i class="fa fa-3x fa-edit"></i>
-                                                    </div>
-                                                    <div class="col-10">
-                                                        <h4 class="">ORDER PLACED</h4>
-                                                        <p class="">We have received your order</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-12 my-3">
-                                                <div class="row no-gutters active-stage">
-                                                    <div class="col-2">
-                                                        <i class="fa fa-3x fa-check-square"></i>
-                                                    </div>
-                                                    <div class="col-10">
-                                                        <h4>Order Confirmed</h4>
-                                                        <p>We have received your order</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-12 my-3">
-                                                <div class="row no-gutters next-stage">
-                                                    <div class="col-2">
-                                                        <i class="fa fa-3x fa-utensils"></i>
-                                                    </div>
-                                                    <div class="col-10">
-                                                        <h4>Order Processed</h4>
-                                                        <p>We have received your order</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-12 my-3">
-                                                <div class="row no-gutters">
-                                                    <div class="col-2">
-                                                        <i class="fa fa-3x fa-motorcycle text-main"></i>
-                                                    </div>
-                                                    <div class="col-10">
-                                                        <h4 class="text-main">Order on the way</h4>
-                                                        <p class="text-darkgray">We have received your order</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-12 my-3">
-                                                <div class="row no-gutters">
-                                                    <div class="col-2">
-                                                        <i class="fa fa-3x fa-home text-main"></i>
-                                                    </div>
-                                                    <div class="col-10">
-                                                        <h4 class="text-main">Order Delivered</h4>
-                                                        <p class="text-darkgray">We have received your order</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                        </div>   
-                                    </div>
-                                    <div class="tab-pane fade" id="past" role="tabpanel" >
-                                        <div class="row no-gutters my-3">
-                                            <div class="col-12">
-                                                <div class="card card-header-profile shadow-5 bg-primary">
-                                                    <div class="card-body">
-                                                        <div class="d-flex no-gutters justify-content-between ">
-                                                            <p class="mb-0">Date: Jan 03 2021</p>
-                                                            <p class="mb-0">Time: 14:13:07</p>
-                                                            <p class="mb-0">ID:  #10</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="card shadow-5">
-                                                    <div class="card-body">
-                                                        <div class="d-flex no-gutters justify-content-between">
-                                                            <h5 class="card-title">Subtotal: </h5>
-                                                            <p class="card-text">405 EGP</p>
-                                                        </div>
-                                                        <div class="d-flex no-gutters justify-content-between">
-                                                            <h5 class="card-title">Delivery Fees: </h5>
-                                                            <p class="card-text">405 EGP</p>
-                                                        </div>
-                                                        <div class="d-flex no-gutters justify-content-between">
-                                                            <h5 class="card-title">VAT:</h5>
-                                                            <p class="card-text">14%</p>
-                                                        </div>
-                                                        <div class="d-flex no-gutters justify-content-between">
-                                                            <h5 class="card-title text-success">DISCOUNT ON OFFER:</h5>
-                                                            <p class="card-text text-success">-15 %</p>
-                                                        </div>
-                                                        <div class="d-flex no-gutters justify-content-between">
-                                                            <h5 class="card-title text-danger">Total:</h5>
-                                                            <p class="card-text text-danger">403.845 EGP</p>
-                                                        </div>
-                                                        
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row no-gutters my-3">
-                                            <div class="col-12">
-                                                <div class="card card-header-profile shadow-5 bg-primary">
-                                                    <div class="card-body">
-                                                        <div class="d-flex no-gutters justify-content-between ">
-                                                            <p class="mb-0">Date: Jan 04 2022</p>
-                                                            <p class="mb-0">Time: 14:13:07</p>
-                                                            <p class="mb-0">ID:  #5</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="card shadow-5">
-                                                    <div class="card-body">
-                                                        <div class="d-flex no-gutters justify-content-between">
-                                                            <h5 class="card-title">Subtotal: </h5>
-                                                            <p class="card-text">405 EGP</p>
-                                                        </div>
-                                                        <div class="d-flex no-gutters justify-content-between">
-                                                            <h5 class="card-title">Delivery Fees: </h5>
-                                                            <p class="card-text">405 EGP</p>
-                                                        </div>
-                                                        <div class="d-flex no-gutters justify-content-between">
-                                                            <h5 class="card-title">VAT:</h5>
-                                                            <p class="card-text">14%</p>
-                                                        </div>
-                                                        <div class="d-flex no-gutters justify-content-between">
-                                                            <h5 class="card-title text-success">DISCOUNT ON OFFER:</h5>
-                                                            <p class="card-text text-success">-15 %</p>
-                                                        </div>
-                                                        <div class="d-flex no-gutters justify-content-between">
-                                                            <h5 class="card-title text-danger">Total:</h5>
-                                                            <p class="card-text text-danger">450 EGP</p>
-                                                        </div>
-                                                        
-                                                    </div>
+                                <div class="row no-gutters my-3">
+                                    <div class="col-12">
+                                        <div class="card card-header-profile shadow-5 bg-primary">
+                                            <div class="card-body">
+                                                <div class="d-flex no-gutters justify-content-between ">
+                                                    <p class="mb-0">Date: Jan 03 2021</p>
+                                                    <p class="mb-0">Time: 14:13:07</p>
+                                                    <p class="mb-0">ID:  #10</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-        
-                                    
+                                    <div class="col-12">
+                                        <div class="card shadow-5">
+                                            <div class="card-body">
+                                                <div class="d-flex no-gutters justify-content-between">
+                                                    <h5 class="card-title">Subtotal: </h5>
+                                                    <p class="card-text">405 EGP</p>
+                                                </div>
+                                                <div class="d-flex no-gutters justify-content-between">
+                                                    <h5 class="card-title">Delivery Fees: </h5>
+                                                    <p class="card-text">405 EGP</p>
+                                                </div>
+                                                <div class="d-flex no-gutters justify-content-between">
+                                                    <h5 class="card-title">VAT:</h5>
+                                                    <p class="card-text">14%</p>
+                                                </div>
+                                                <div class="d-flex no-gutters justify-content-between">
+                                                    <h5 class="card-title text-success">DISCOUNT ON OFFER:</h5>
+                                                    <p class="card-text text-success">-15 %</p>
+                                                </div>
+                                                <div class="d-flex no-gutters justify-content-between">
+                                                    <h5 class="card-title text-danger">Total:</h5>
+                                                    <p class="card-text text-danger">403.845 EGP</p>
+                                                </div>
+                                                <button class="btn btn-primary">Re Order</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>   
-                        </div> -->
+                                <div class="row no-gutters my-3">
+                                    <div class="col-12">
+                                        <div class="card card-header-profile shadow-5 bg-primary">
+                                            <div class="card-body">
+                                                <div class="d-flex no-gutters justify-content-between ">
+                                                    <p class="mb-0">Date: Jan 04 2022</p>
+                                                    <p class="mb-0">Time: 14:13:07</p>
+                                                    <p class="mb-0">ID:  #5</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="card shadow-5">
+                                            <div class="card-body">
+                                                <div class="d-flex no-gutters justify-content-between">
+                                                    <h5 class="card-title">Subtotal: </h5>
+                                                    <p class="card-text">405 EGP</p>
+                                                </div>
+                                                <div class="d-flex no-gutters justify-content-between">
+                                                    <h5 class="card-title">Delivery Fees: </h5>
+                                                    <p class="card-text">405 EGP</p>
+                                                </div>
+                                                <div class="d-flex no-gutters justify-content-between">
+                                                    <h5 class="card-title">VAT:</h5>
+                                                    <p class="card-text">14%</p>
+                                                </div>
+                                                <div class="d-flex no-gutters justify-content-between">
+                                                    <h5 class="card-title text-success">DISCOUNT ON OFFER:</h5>
+                                                    <p class="card-text text-success">-15 %</p>
+                                                </div>
+                                                <div class="d-flex no-gutters justify-content-between">
+                                                    <h5 class="card-title text-danger">Total:</h5>
+                                                    <p class="card-text text-danger">450 EGP</p>
+                                                </div>
+                                                <button class="btn btn-primary">Re Order</button>
+        
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                <div class="product_info_button">    
+                                    <ul class="nav" role="tablist" id="nav-tab">
+                                        
+                                        <li>
+                                            <a>Profile</a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                                <form action="" method="get">
+                                    <div class="form-row row">
+                                        <div class="form-group form-control-validation  col-lg-6">
+                                            <input class="form-control" type="text" id="full_name" name="full_name" placeholder="Full Name">
+                                        </div>
 
+                                        <div class="form-group  form-control-validation col-lg-6">
+                                            <input class="form-control" type="email" id="email" name="email" placeholder="Email address">
+                                        </div>
+
+                                        <div class="form-group form-control-validation col-lg-6">
+                                            <input class="form-control" type="number" id="phone" name="phone" min="1" placeholder="Phone Number">
+                                        </div>
+                                        
+                                        <div class="form-group form-control-validation  col-lg-6">
+                                            <input class="form-control" type="text" id="address" name="address" placeholder="Address">
+                                        </div>
+                                        
+                                        <div class="col-12">
+                                            <button class="btn btn-solid w-auto">Update Information</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                <div class="product_info_button">    
+                                    <ul class="nav" role="tablist" id="nav-tab">
+                                        
+                                        <li>
+                                            <a>Change password</a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                                <form action="" method="get">
+                                    <div class="form-row row">
+                                        
+                                        <div class="form-group form-control-validation  col-lg-6">
+                                            <input class="form-control" type="password" id="password" name="password" placeholder="Password">
+        
+                                        </div>
+                                        <div class="form-group form-control-validation  col-lg-6">
+                                            <input class="form-control" type="password" id="password_confirmation" name="password_confirmation" placeholder="Confirm Password">
+        
+                                        </div>
+                                        <div class="col-12">
+        
+                                            <button class="btn btn-solid w-auto">Update Password</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                          </div>
+                          
+                        </div>
+                        
+                        
                     </div>
-                    
-                </div>
             </div>
         </div>
     </section>

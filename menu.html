@@ -615,10 +615,17 @@
                                             </div>
                                         </li> 
                                         -->
-                                        <li class="onhover-div mobile-cart">
+                                        <li class="onhover-div mobile-cart " id="cart">
                                             <div><img src="assets/images/icon/cart.png" class="img-fluid blur-up lazyload" alt=""> <i class="ti-shopping-cart"></i></div>
                                             <span class="cart_qty_cls">3</span>
-                                            <ul class="show-div shopping-cart">
+                                            <!-- <ul class="show-div shopping-cart">
+                                                <li>
+                                                    <button id="cartClose" class="btn">
+                                                        <div class="close-circle text-left"><i class="fa fa-2x text-danger fa-times"
+                                                            aria-hidden="true"></i>
+                                                        </div>                                                    
+                                                    </button>
+                                                </li>
                                                 <li>
                                                     <div class="media">
                                                         <a href="#"><img alt="" class="me-3"
@@ -671,7 +678,7 @@
                                                     <div class="buttons"><a href="cart.html" class="view-cart">view
                                                             cart</a> <a href="checkout.html" class="checkout">checkout</a></div>
                                                 </li>
-                                            </ul>
+                                            </ul> -->
                                         </li>
                                     </ul>
                                 </div>
@@ -683,8 +690,76 @@
         </div>
     </header>
     <!-- header end -->
+    <!-- start mini cart -->
+    <div class="mini-cart">
+        <ul class="show-div shopping-cart">
 
+            <div class="d-flex justify-content-between align-items-center ">
+                <p class="mb-0">There is 3 products</p>
+                <a id="closeCart" class="text-danger"><i class="fa fa-2x fa-times" aria-hidden="true"></i></a>
+            </div>
+            <hr class="my-3">
+            <div class="mini-cart-items">
 
+                <li>
+                    <div class="media">
+                        <a href="#"><img alt="" class="me-3"
+                                src="assets/images/Menu/Appetizers/1.jpg"></a>
+                        <div class="media-body">
+                            <a href="#">
+                                <h4>COLESLAW</h4>
+                            </a>
+                            <h4><span>2 x 16 EGP</span></h4>
+                        </div>
+                    </div>
+                    <div class="close-circle"><a href="#"><i class="fa fa-times"
+                                aria-hidden="true"></i></a></div>
+                </li>
+                <li>
+                    <div class="media">
+                        <a href="#"><img alt="" class="me-3"
+                                src="assets/images/Menu/Fried_Chicken/1.jpg"></a>
+                        <div class="media-body">
+                            <a href="#">
+                                <h4>Fried Chicken Pizza</h4>
+                            </a>
+                            <h4><span>1 x 59 EGP</span></h4>
+                        </div>
+                    </div>
+                    <div class="close-circle"><a href="#"><i class="fa fa-times"
+                                aria-hidden="true"></i></a></div>
+                </li>
+                <li>
+                    <div class="media">
+                        <a href="#"><img alt="" class="me-3"
+                                src="assets/images/Menu/Sandwiches/1.jpg"></a>
+                        <div class="media-body">
+                            <a href="#">
+                                <h4>Zinger King sandwich
+                                </h4>
+                            </a>
+                            <h4><span>1 x 92 EGP</span></h4>
+                        </div>
+                    </div>
+                    <div class="close-circle"><a href="#"><i class="fa fa-times"
+                                aria-hidden="true"></i></a></div>
+                </li>
+            </div>
+            <div class="mini-cart-footer">
+
+                <li>
+                    <div class="total">
+                        <h5>subtotal : <span>183 EGP</span></h5>
+                    </div>
+                </li>
+                <li>
+                    <div class="buttons"><a href="cart.html" class="view-cart">view
+                            cart</a> <a href="checkout.html" class="checkout">checkout</a></div>
+                </li>
+            </div>
+        </ul>
+    </div>
+    <!-- end mini cart -->
     <!-- breadcrumb start -->
     <div class="breadcrumb-section">
         <div class="container">
@@ -753,6 +828,8 @@
                     <div class="collection-content col">
                         <div class="page-main-content">
                             <div class="row">
+                                
+                                        
                                 <div class="col-sm-12">
 
                                     <div class="collection-product-wrapper">
@@ -797,16 +874,19 @@
                                                     <div class="product-box">
                                                         <div class="img-wrapper">
                                                             <div class="front">
-                                                                <a href="product_details.html"><img src="assets/images/Menu/Fried_Chicken/1.jpg"
-                                                                        class="img-fluid blur-up lazyload bg-img"
-                                                                        alt=""></a>
+                                                                <a href="product_details.html"><img src="assets/images/Menu/Fried_Chicken/1.jpg" class="img-fluid blur-up lazyload bg-img" alt=""></a>
                                                             </div>
                                                             <div class="back">
-                                                                <a href="product_details.html"><img src="assets/images/Menu/Fried_Chicken/1.jpg"
-                                                                        class="img-fluid blur-up lazyload bg-img"
-                                                                        alt=""></a>
+                                                                <a href="product_details.html"><img src="assets/images/Menu/Fried_Chicken/1.jpg" class="img-fluid blur-up lazyload bg-img" alt=""></a>
                                                             </div>
-                                                            
+                                                            <div class="cart-info cart-wrap">
+                                                                <a class="addToCartIcon" title="Add to Cart" tabindex="-1">
+                                                                    <i class="ti-shopping-cart"></i>
+                                                                </a>
+                                                                <a href="#" data-bs-toggle="modal" data-bs-target="#quick-view" title="Quick View" tabindex="-1">
+                                                                    <i class="ti-eye" aria-hidden="true"></i>
+                                                                </a>
+                                                            </div>
                                                         </div>
                                                         <div class="product-detail">
                                                             <div>
@@ -827,6 +907,7 @@
                                                                 
                                                             </div>
                                                         </div>
+                                                        
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-4 col-6 col-grid-box">
@@ -842,7 +923,14 @@
                                                                         class="img-fluid blur-up lazyload bg-img"
                                                                         alt=""></a>
                                                             </div>
-                                                            
+                                                            <div class="cart-info cart-wrap">
+                                                                <a class="addToCartIcon" title="Add to Cart" tabindex="-1">
+                                                                    <i class="ti-shopping-cart"></i>
+                                                                </a>
+                                                                <a href="#" data-bs-toggle="modal" data-bs-target="#quick-view" title="Quick View" tabindex="-1">
+                                                                    <i class="ti-eye" aria-hidden="true"></i>
+                                                                </a>
+                                                            </div>
                                                         </div>
                                                         <div class="product-detail">
                                                             <div>
@@ -881,7 +969,14 @@
                                                                         class="img-fluid blur-up lazyload bg-img"
                                                                         alt=""></a>
                                                             </div>
-                                                            
+                                                            <div class="cart-info cart-wrap">
+                                                                <a class="addToCartIcon" title="Add to Cart" tabindex="-1">
+                                                                    <i class="ti-shopping-cart"></i>
+                                                                </a>
+                                                                <a href="#" data-bs-toggle="modal" data-bs-target="#quick-view" title="Quick View" tabindex="-1">
+                                                                    <i class="ti-eye" aria-hidden="true"></i>
+                                                                </a>
+                                                            </div>
                                                         </div>
                                                         <div class="product-detail">
                                                             <div>
@@ -921,7 +1016,14 @@
                                                                         class="img-fluid blur-up lazyload bg-img"
                                                                         alt=""></a>
                                                             </div>
-                                                            
+                                                            <div class="cart-info cart-wrap">
+                                                                <a class="addToCartIcon" title="Add to Cart" tabindex="-1">
+                                                                    <i class="ti-shopping-cart"></i>
+                                                                </a>
+                                                                <a href="#" data-bs-toggle="modal" data-bs-target="#quick-view" title="Quick View" tabindex="-1">
+                                                                    <i class="ti-eye" aria-hidden="true"></i>
+                                                                </a>
+                                                            </div>
                                                         </div>
                                                         <div class="product-detail">
                                                             <div>
@@ -962,7 +1064,14 @@
                                                                         class="img-fluid blur-up lazyload bg-img"
                                                                         alt=""></a>
                                                             </div>
-                                                            
+                                                            <div class="cart-info cart-wrap">
+                                                                <a class="addToCartIcon" title="Add to Cart" tabindex="-1">
+                                                                    <i class="ti-shopping-cart"></i>
+                                                                </a>
+                                                                <a href="#" data-bs-toggle="modal" data-bs-target="#quick-view" title="Quick View" tabindex="-1">
+                                                                    <i class="ti-eye" aria-hidden="true"></i>
+                                                                </a>
+                                                            </div>
                                                         </div>
                                                         <div class="product-detail">
                                                             <div>
@@ -999,7 +1108,14 @@
                                                                         class="img-fluid blur-up lazyload bg-img"
                                                                         alt=""></a>
                                                             </div>
-                                                            
+                                                            <div class="cart-info cart-wrap">
+                                                                <a class="addToCartIcon" title="Add to Cart" tabindex="-1">
+                                                                    <i class="ti-shopping-cart"></i>
+                                                                </a>
+                                                                <a href="#" data-bs-toggle="modal" data-bs-target="#quick-view" title="Quick View" tabindex="-1">
+                                                                    <i class="ti-eye" aria-hidden="true"></i>
+                                                                </a>
+                                                            </div>
                                                         </div>
                                                         <div class="product-detail">
                                                             <div>
@@ -1481,6 +1597,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -1490,7 +1607,7 @@
     </section>
     <!-- section End -->
 
-
+    <div class="full_screen_page"></div>
     <!-- footer -->
     <footer class="footer-light">
         <section class="section-b-space light-layout">
