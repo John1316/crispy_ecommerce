@@ -15,3 +15,17 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
 .bg-primary.bg-darken-2{
 	background-color: #F08A10 !important;
 }
+.menu-shadow{
+	box-shadow: 1px 0px 30px rgb(0 0 0 / 10%);
+	background-color: #fff !important;
+}
+.card{
+	min-height: 137px;
+}
+.main-menu.menu-light .navigation{
+	background-color: transparent !important;
+}
+.table .thead-dark th{
+	background-color: #F08A10;
+	border-color: transparent;
+}
