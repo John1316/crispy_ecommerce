@@ -39010,3 +39010,6 @@ body.rtl .account-setting {
 .profile_page{
   padding: 70px 0 ;
 }
+.login-page{
+  min-height:600px
+}
